@@ -24,7 +24,7 @@ public class MyGrades
     public String toString()
 
     {
-        return result + " Average score is " + avg + "\n";
+        return result + " Average score is " + Math.round(avg) + "\n";
     }
 
 }

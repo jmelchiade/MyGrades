@@ -1,43 +1,13 @@
-// import java.util.Scanner;
-
-// class TestGrades
-
-// {
-// public static void main(String[] arg)
-
-// {
-// Scanner input = new Scanner(System.in);
-// System.out.print("Enter your id ----- >");
-// String id = input.nextLine();
-
-// MyGrades m = new MyGrades(id);
-
-// System.out.print("\nEnter test score -----> ");
-// double grade = input.nextDouble();
-// m.add(grade);
-
-// System.out.print("\nEnter test score -----> ");
-// grade = input.nextDouble();
-// m.add(grade);
-
-// System.out.print("\nEnter test score -----> ");
-// grade = input.nextDouble();
-// m.add(grade);
-
-// m.average();
-// System.out.println("\n" + m);
-
-// }
-// }
-
 import java.util.Scanner;
 
 class TestGrades
 
 {
-    public static void main(String[] arg) {
+    public static void main(String[] arg)
+
+    {
         Scanner input = new Scanner(System.in);
-        System.out.print("Enter your id -----> ");
+        System.out.print("Enter your id ----- >");
         String id = input.nextLine();
 
         MyGrades m = new MyGrades(id);
@@ -50,10 +20,15 @@ class TestGrades
         grade = input.nextDouble();
         m.add(grade);
 
+        System.out.print("\nEnter test score -----> ");
+        grade = input.nextDouble();
+        m.add(grade);
+
         m.average();
         System.out.println("\n" + m);
 
+        input.close();
+
     }
 
-    // error persists for Scanner Input
 }
